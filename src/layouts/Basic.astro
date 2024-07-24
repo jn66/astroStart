@@ -18,7 +18,7 @@ import NarBar from "../components/NarBar.astro";
     <link rel="stylesheet" href="assets/css/tailwind.css" />
 
     <!-- ==== WOW JS ==== -->
-    <script is:inline src="assets/js/wow.min.js"></script>
+     <script is:inline src="assets/js/wow.min.js"></script>
     <script is:inline>
       new WOW().init();
     </script>
@@ -26,5 +26,8 @@ import NarBar from "../components/NarBar.astro";
   <body>
     <NarBar />
     <slot />
+    <script>
+      import "../scripts/main.js";
+    </script>
   </body>
 </html>
