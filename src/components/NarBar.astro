@@ -1,153 +1,135 @@
-<div
-  class="ud-header absolute top-0 left-0 z-40 flex w-full items-center bg-transparent"
->
-  <div class="container">
-    <div class="relative -mx-4 flex items-center justify-between">
-      <div class="w-60 max-w-full px-4">
-        <a href="index.html" class="navbar-logo block w-full py-5">
-          <img
-            src="/assets/images/logo/logo-white.svg"
-            alt="logo"
-            class="header-logo w-full"
-          />
-        </a>
+<!-- preloader -->
+<div id="preloader" class="preloader">
+  <div class="animation-preloader">
+    <div class="spinner"></div>
+    <div class="txt-loading">
+      <span data-text-preloader="T" class="letters-loading"> T </span>
+      <span data-text-preloader="E" class="letters-loading"> E </span>
+      <span data-text-preloader="C" class="letters-loading"> C </span>
+      <span data-text-preloader="H" class="letters-loading"> H </span>
+      <span data-text-preloader="E" class="letters-loading"> E </span>
+      <span data-text-preloader="X" class="letters-loading"> X </span>
+    </div>
+    <p class="text-center">Loading</p>
+  </div>
+  <div class="loader">
+    <div class="row">
+      <div class="col-3 loader-section section-left">
+        <div class="bg"></div>
       </div>
-      <div class="flex w-full items-center justify-between px-4">
-        <div>
-          <button
-            id="navbarToggler"
-            class="absolute right-4 top-1/2 block -translate-y-1/2 rounded-lg px-3 py-[6px] ring-primary focus:ring-2 lg:hidden"
-          >
-            <span class="relative my-[6px] block h-[2px] w-[30px] bg-white"
-            ></span>
-            <span class="relative my-[6px] block h-[2px] w-[30px] bg-white"
-            ></span>
-            <span class="relative my-[6px] block h-[2px] w-[30px] bg-white"
-            ></span>
-          </button>
-          <nav
-            id="navbarCollapse"
-            class="absolute right-4 top-full hidden w-full max-w-[250px] rounded-lg bg-white py-5 shadow-lg lg:static lg:block lg:w-full lg:max-w-full lg:bg-transparent lg:py-0 lg:px-4 lg:shadow-none xl:px-6"
-          >
-            <ul class="blcok lg:flex">
-              <li class="group relative">
-                <a
-                  href="#home"
-                  class="ud-menu-scroll mx-8 flex py-2 text-base text-dark group-hover:text-primary lg:mr-0 lg:inline-flex lg:py-6 lg:px-0 lg:text-white lg:group-hover:text-white lg:group-hover:opacity-70"
-                >
-                  首页
-                </a>
-              </li>
-              <li class="group relative">
-                <a
-                  href="#about"
-                  class="ud-menu-scroll mx-8 flex py-2 text-base text-dark group-hover:text-primary lg:mr-0 lg:ml-7 lg:inline-flex lg:py-6 lg:px-0 lg:text-white lg:group-hover:text-white lg:group-hover:opacity-70 xl:ml-12"
-                >
-                  关于
-                </a>
-              </li>
-              <li class="group relative">
-                <a
-                  href="#pricing"
-                  class="ud-menu-scroll mx-8 flex py-2 text-base text-dark group-hover:text-primary lg:mr-0 lg:ml-7 lg:inline-flex lg:py-6 lg:px-0 lg:text-white lg:group-hover:text-white lg:group-hover:opacity-70 xl:ml-12"
-                >
-                  价格
-                </a>
-              </li>
-              <li class="group relative">
-                <a
-                  href="#team"
-                  class="ud-menu-scroll mx-8 flex py-2 text-base text-dark group-hover:text-primary lg:mr-0 lg:ml-7 lg:inline-flex lg:py-6 lg:px-0 lg:text-white lg:group-hover:text-white lg:group-hover:opacity-70 xl:ml-12"
-                >
-                  团队
-                </a>
-              </li>
-              <li class="group relative">
-                <a
-                  href="#contact"
-                  class="ud-menu-scroll mx-8 flex py-2 text-base text-dark group-hover:text-primary lg:mr-0 lg:ml-7 lg:inline-flex lg:py-6 lg:px-0 lg:text-white lg:group-hover:text-white lg:group-hover:opacity-70 xl:ml-12"
-                >
-                  联系我们
-                </a>
-              </li>
-              <!-- <li class="submenu-item group relative">
-                <a
-                  href="javascript:void(0)"
-                  class="relative mx-8 flex py-2 text-base text-dark after:absolute after:right-1 after:top-1/2 after:mt-[-2px] after:h-2 after:w-2 after:-translate-y-1/2 after:rotate-45 after:border-b-2 after:border-r-2 after:border-current group-hover:text-primary lg:mr-0 lg:ml-8 lg:inline-flex lg:py-6 lg:pl-0 lg:pr-4 lg:text-white lg:after:right-0 lg:group-hover:text-white lg:group-hover:opacity-70 xl:ml-12"
-                >
-                  Pages
-                </a>
-                <div
-                  class="submenu relative top-full left-0 hidden w-[250px] rounded-sm bg-white p-4 transition-[top] duration-300 group-hover:opacity-100 lg:invisible lg:absolute lg:top-[110%] lg:block lg:opacity-0 lg:shadow-lg lg:group-hover:visible lg:group-hover:top-full"
-                >
-                  <a
-                    href="about.html"
-                    class="block rounded py-[10px] px-4 text-sm text-body-color hover:text-primary"
-                  >
-                    About Page
-                  </a>
-                  <a
-                    href="pricing.html"
-                    class="block rounded py-[10px] px-4 text-sm text-body-color hover:text-primary"
-                  >
-                    Pricing Page
-                  </a>
-                  <a
-                    href="contact.html"
-                    class="block rounded py-[10px] px-4 text-sm text-body-color hover:text-primary"
-                  >
-                    Contact Page
-                  </a>
-                  <a
-                    href="blog-grids.html"
-                    class="block rounded py-[10px] px-4 text-sm text-body-color hover:text-primary"
-                  >
-                    Blog Grid Page
-                  </a>
-                  <a
-                    href="blog-details.html"
-                    class="block rounded py-[10px] px-4 text-sm text-body-color hover:text-primary"
-                  >
-                    Blog Details Page
-                  </a>
-                  <a
-                    href="signup.html"
-                    class="block rounded py-[10px] px-4 text-sm text-body-color hover:text-primary"
-                  >
-                    Sign Up Page
-                  </a>
-                  <a
-                    href="signin.html"
-                    class="block rounded py-[10px] px-4 text-sm text-body-color hover:text-primary"
-                  >
-                    Sign In Page
-                  </a>
-                  <a
-                    href="404.html"
-                    class="block rounded py-[10px] px-4 text-sm text-body-color hover:text-primary"
-                  >
-                    404 Page
-                  </a>
-                </div>
-              </li> -->
-            </ul>
-          </nav>
-        </div>
-        <div class="hidden justify-end pr-16 sm:flex lg:pr-0">
-          <a
-            href="signin.html"
-            class="loginBtn py-3 px-7 text-base font-medium text-white hover:opacity-70"
-          >
-            Sign In
-          </a>
-          <a
-            href="signup.html"
-            class="signUpBtn rounded-lg bg-white bg-opacity-20 py-3 px-6 text-base font-medium text-white duration-300 ease-in-out hover:bg-opacity-100 hover:text-dark"
-          >
-            Sign Up
-          </a>
-        </div>
+      <div class="col-3 loader-section section-left">
+        <div class="bg"></div>
+      </div>
+      <div class="col-3 loader-section section-right">
+        <div class="bg"></div>
+      </div>
+      <div class="col-3 loader-section section-right">
+        <div class="bg"></div>
       </div>
     </div>
   </div>
 </div>
+
+<!-- welcome content start from here -->
+
+<header class="header-wrap header-1">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-6 col-sm-5 col-xl-2">
+        <div class="logo">
+          <a href="index.html">
+            智趣创想
+            <!-- <img src="assets/img/logo.png" alt="logo"> -->
+          </a>
+        </div>
+      </div>
+      <!-- <div class="col-xl-7 d-none d-xl-block">
+        <div class="main-menu">
+          <ul>
+            <li>
+              <a href="#">Home <i class="fas fa-angle-down"></i></a>
+              <ul class="sub-menu">
+                <li><a href="index.html">home 1</a></li>
+                <li><a href="index-2.html">home 2</a></li>
+                <li><a href="index-3.html">home 3</a></li>
+              </ul>
+            </li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li>
+              <a href="#">Pages <i class="fas fa-angle-down"></i></a>
+              <ul class="sub-menu">
+                <li><a href="cases-grid.html">case grid</a></li>
+                <li><a href="project-details.html">case details</a></li>
+                <li><a href="faq.html">faq</a></li>
+                <li><a href="team.html">team</a></li>
+                <li><a href="case-2.html">case two</a></li>
+              </ul>
+            </li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-xl-3 col-sm-6 d-none d-sm-block pl-xl-0 text-right">
+        <a href="contact.html" class="theme-btn"
+          >Consultancy <i class="fas fa-arrow-right"></i></a
+        >
+      </div> -->
+      <div class="mobile-nav-bar d-block col-sm-1 col-6 d-xl-none">
+        <div class="mobile-nav-wrap">
+          <div id="hamburger">
+            <i class="fal fa-bars"></i>
+          </div>
+          <!-- mobile menu - responsive menu  -->
+          <div class="mobile-nav">
+            <button type="button" class="close-nav">
+              <i class="fal fa-times-circle"></i>
+            </button>
+            <nav class="sidebar-nav">
+              <ul class="metismenu" id="mobile-menu">
+                <li>
+                  <a class="has-arrow" href="#">Homes</a>
+                  <ul class="sub-menu">
+                    <li><a href="index.html">Homepage 1</a></li>
+                    <li><a href="index-2.html">Homepage 2</a></li>
+                    <li><a href="index-3.html">Homepage 3</a></li>
+                  </ul>
+                </li>
+                <li><a href="about.html">about</a></li>
+                <li><a href="services.html">services</a></li>
+                <li>
+                  <a class="has-arrow" href="#">Pages</a>
+                  <ul class="sub-menu">
+                    <li><a href="faq.html">faq</a></li>
+                    <li>
+                      <a href="services-details.html">services details</a>
+                    </li>
+                    <li><a href="team.html">Team</a></li>
+                    <li><a href="cases-grid.html">Case Grid</a></li>
+                    <li><a href="case-2.html">Case Grid 2</a></li>
+                  </ul>
+                </li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </nav>
+
+            <div class="action-bar">
+              <a href="mailto:modinatheme@gmail.com"
+                ><i class="fal fa-envelope-open-text"></i>info@webmail.com</a
+              >
+              <a href="tel:123-456-7890"
+                ><i class="fal fa-phone"></i>987-098-098-09</a
+              >
+              <a href="contact.html" class="d-btn theme-btn black"
+                >Consultancy</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="overlay"></div>
+      </div>
+    </div>
+  </div>
+</header>

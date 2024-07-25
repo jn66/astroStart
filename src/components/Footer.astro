@@ -1,23 +1,128 @@
----
-const platform = "github";
-const username = "withastro";
-import Social from "./Social.astro";
----
+<footer class="footer-1 footer-wrap">
+  <div class="footer-widgets">
+    <div class="container">
+      <div class="row justify-content-between">
+        <div class="col-md-6 col-xl-3 col-12 pr-xl-4">
+          <div class="single-footer-wid site_footer_widget newsletter_widget">
+            <a href="index.html">
+              智趣创想
+              <!-- <img src="assets/img/logo.png" alt=""> -->
+            </a>
+            <p class="mt-4">
+              Sed ut perspiciatis unde omnis natus voluptatem accusa ntiumy
+              doloremque laudantium.
+            </p>
+            <div class="newsletter_box">
+              <form action="#">
+                <input type="email" placeholder="Email address" required />
+                <button class="submit-btn" type="submit"
+                  ><i class="fal fa-envelope-open-text"></i></button
+                >
+              </form>
+            </div>
+          </div>
+        </div>
+        <!-- /.col-lg-3 - single-footer-wid -->
+        <div class="col-md-6 col-xl-2 col-12">
+          <div class="single-footer-wid">
+            <div class="wid-title">
+              <h4>Company</h4>
+            </div>
+            <ul>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="about.html">Company History</a></li>
+              <li><a href="contact.html">Need a Career</a></li>
+              <li><a href="project-details.html">Working Process</a></li>
+              <li><a href="news.html">Blog Post</a></li>
+            </ul>
+          </div>
+        </div>
+        <!-- /.col-lg-3 - single-footer-wid -->
+        <div class="col-md-6 col-xl-3 col-12">
+          <div class="single-footer-wid recent_post_widget">
+            <div class="wid-title">
+              <h4>News News</h4>
+            </div>
+            <div class="recent-post-list">
+              <div class="single-recent-post">
+                <div
+                  class="thumb bg-cover"
+                  style="background-image: url('assets/img/blog/b1.jpg');"
+                >
+                </div>
+                <div class="post-data">
+                  <span><i class="fal fa-calendar-alt"></i>24th Nov 2020</span>
+                  <h5>
+                    <a href="news-details.html"
+                      >User’s Perspes Using Story Structure</a
+                    >
+                  </h5>
+                </div>
+              </div>
+              <div class="single-recent-post">
+                <div
+                  class="thumb bg-cover"
+                  style="background-image: url('assets/img/blog/b2.jpg');"
+                >
+                </div>
+                <div class="post-data">
+                  <span><i class="fal fa-calendar-alt"></i>15th July 2021</span>
+                  <h5>
+                    <a href="news-details.html"
+                      >Optimiz For Assistive Technology Users</a
+                    >
+                  </h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /.col-lg-3 - single-footer-wid -->
+        <div class="col-md-6 col-xl-3 col-12">
+          <div class="single-footer-wid contact_widget_2">
+            <div class="wid-title">
+              <h4>Contact Us</h4>
+            </div>
+            <div class="contact-us">
+              <div class="single-contact-info">
+                <div class="icon">
+                  <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <div class="contact-info">
+                  <p>256 Elizaberth Ave, Brooklyn, CA, 90025</p>
+                </div>
+              </div>
+              <div class="single-contact-info">
+                <div class="icon">
+                  <i class="fas fa-envelope-open-text"></i>
+                </div>
+                <div class="contact-info">
+                  <p>info@supportexam.com</p>
+                </div>
+              </div>
+              <div class="single-contact-info">
+                <div class="icon">
+                  <i class="fas fa-phone"></i>
+                </div>
+                <div class="contact-info">
+                  <p>+012 (345) 678 99</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /.col-lg-3 - single-footer-wid -->
+      </div>
+    </div>
+  </div>
 
-<style>
-  footer {
-    display: flex;
-    gap: 1rem;
-    margin-top: 2rem;
-  }
-</style>
-<footer>
-  <p>
-    Learn more about my projects on <a
-      href={`https://www.${platform}.com/${username}`}>{platform}</a
-    >!
-  </p>
-  <Social platform="twitter" username="astrodotbuild" />
-  <Social platform="github" username="withastro" />
-  <Social platform="youtube" username="astrodotbuild" />
+  <div class="footer-bottom">
+    <div class="container text-center">
+      <div class="footer-bottom-content">
+        © 2021 Techex All Rights Reserved, Share By <a
+          href="https://nullphpscript.com/category/html/">HTML Templates</a
+        >
+      </div>
+    </div>
+  </div>
 </footer>

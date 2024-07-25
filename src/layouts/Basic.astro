@@ -1,33 +1,69 @@
 ---
 import NarBar from "../components/NarBar.astro";
+import Footer from "../components/Footer.astro"
+
 ---
 
 <!doctype html>
-<html lang="zh-cn" class="scroll-smooth">
+<html lang="en">
   <head>
+    <!-- ========== Meta Tags ========== -->
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>zqcx</title>
-    <link
-      rel="shortcut icon"
-      href="assets/images/favicon.png"
-      type="image/x-icon"
-    />
+    <meta name="author" content="modinatheme" />
+    <!-- ======== Page title ============ -->
+    <title>Techex - Information & Technology HTML Template</title>
+    <!-- ========== Favicon Icon ========== -->
+    <link rel="shortcut icon" href="assets/img/favicon.png" />
+    <!-- ===========  All Stylesheet ================= -->
+    <!--  Icon css plugins -->
+    <link rel="stylesheet" href="assets/css/icons.css" />
+    <!--  animate css plugins -->
     <link rel="stylesheet" href="assets/css/animate.css" />
-    <link rel="stylesheet" href="assets/css/tailwind.css" />
-
-    <!-- ==== WOW JS ==== -->
-     <script is:inline src="assets/js/wow.min.js"></script>
-    <script is:inline>
-      new WOW().init();
-    </script>
+    <!--  magnific-popup css plugins -->
+    <link rel="stylesheet" href="assets/css/magnific-popup.css" />
+    <!--  owl carosuel css plugins -->
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css" />
+    <!-- metis menu css file -->
+    <link rel="stylesheet" href="assets/css/metismenu.css" />
+    <!--  owl theme css plugins -->
+    <link rel="stylesheet" href="assets/css/owl.theme.css" />
+    <!--  Bootstrap css plugins -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <!--  main style css file -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
   </head>
-  <body>
+
+  <body class="body-wrapper">
     <NarBar />
     <slot />
-    <script>
-      import "../scripts/main.js";
-    </script>
+    <Footer />
+    <!--  ALl JS Plugins
+    ====================================== -->
+    <script is:inline src="assets/js/jquery.min.js"></script>
+    <script is:inline src="assets/js/modernizr.min.js"></script>
+    <script is:inline src="assets/js/jquery.easing.js"></script>
+    <script is:inline src="assets/js/popper.min.js"></script>
+    <script is:inline src="assets/js/bootstrap.min.js"></script>
+    <script is:inline src="assets/js/isotope.pkgd.min.js"></script>
+    <script is:inline src="assets/js/imageload.min.js"></script>
+    <script is:inline src="assets/js/scrollUp.min.js"></script>
+    <script is:inline src="assets/js/owl.carousel.min.js"></script>
+    <script is:inline src="assets/js/magnific-popup.min.js"></script>
+    <script is:inline src="assets/js/waypoint.js"></script>
+    <script is:inline src="assets/js/easypiechart.min.js"></script>
+    <script is:inline src="assets/js/counterup.min.js"></script>
+    <script is:inline src="assets/js/wow.min.js"></script>
+    <script is:inline src="assets/js/metismenu.js"></script>
+    <script is:inline src="assets/js/timeline.min.js"></script>
+    <script is:inline src="assets/js/ajax-mail.js"></script>
+    <script is:inline src="assets/js/active.js"></script>
   </body>
 </html>
